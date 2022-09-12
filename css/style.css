@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.greeting {
+  background-image: url(/img/header_bg.webp);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.greeting__menu {
+  position: absolute;
+  width: 40vw;
+  min-width: 640px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 35px;
+}
+.greeting__items {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 10px;
+  letter-spacing: 2.6px;
+  align-items: center;
+}
+.greeting__item {
+  color: #4d4959;
+}
+.greeting__item-logo {
+  width: 94px;
+  height: 85px;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  max-height: 470px;
+  flex-direction: column;
+  margin: 80px 0;
+  overflow: hidden;
+}
+.about__icon {
+  margin: 35px auto;
+  justify-content: center;
+}
+.about__text {
+  flex: 1 1 67.5%;
+}
+
+.text__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #353738;
+}
+.text__subtitle {
+  font-size: 18px;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: center;
+  color: #848789;
+  padding: 26px 68px 40px;
+}
+.text__subtitle::after {
+  content: "";
+  position: relative;
+  left: 50%;
+  margin: 40px 0 0 -25px;
+  width: 50px;
+  height: 1px;
+  background-color: #353738;
+  display: block;
+}
+
+.bicycle-01__container {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.bicycle-01__image {
+  flex: 1 1 auto;
+}
+.bicycle-01__image::before {
+  content: "";
+  position: relative;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(170, 22, 22);
+  display: block;
+  transform: rotate(45deg) translateY(15px);
+  z-index: 2;
+}
+.bicycle-01__img--big {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bicycle-01__description {
+  flex: 1 1 33.333%;
+  position: relative;
+  flex-direction: column;
+}
+.bicycle-01__icon {
+  text-align: center;
+}
+.bicycle-01__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.main-image {
+  flex: 1 1 66.666%;
+}
+
+.gallery {
+  display: grid;
+  grid-template: 1fr 1fr 200px/repeat(6, 1fr);
+  grid-template-areas: "img1 img2 img4 img5 img6 img6" "img3 img3 img4 img5 img7 img8" "shop shop shop shop shop shop";
+}
+.gallery__item {
+  position: relative;
+}
+.gallery__item:hover {
+  background-color: rgb(100, 194, 158);
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery__item-1 {
+  grid-area: img1;
+}
+.gallery__item-2 {
+  grid-area: img2;
+}
+.gallery__item-3 {
+  grid-area: img3;
+}
+.gallery__item-4 {
+  grid-area: img4;
+}
+.gallery__item-5 {
+  grid-area: img5;
+}
+.gallery__item-6 {
+  grid-area: img6;
+}
+.gallery__item-7 {
+  grid-area: img7;
+}
+.gallery__item-8 {
+  grid-area: img8;
+}
+.gallery__item-shop {
+  grid-area: shop;
+  text-align: center;
+  background-color: #282f35;
+  position: relative;
+}
+.gallery__button {
+  margin: 75px auto;
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.49);
+}
+
+.btnToShop {
+  line-height: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
