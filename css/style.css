@@ -145,15 +145,15 @@ body {
 }
 
 /* Подчёркивание-------------::after {
-	content: "";
-	position: relative;
-	left: 50%;
-	margin: 40px 0 0 -25px;
-	width: 50px;
-	height: 1px;
-	background-color: #353738;
-	display: block;
-}*/
+		content: "";
+		position: relative;
+		left: 50%;
+		margin: 40px 0 0 -25px;
+		width: 50px;
+		height: 1px;
+		background-color: #353738;
+		display: block;
+	}*/
 .product {
   width: 100%;
   display: flex;
@@ -410,28 +410,58 @@ body {
 }
 
 .footer {
-  height: 250px;
   background-color: #f7f7f7;
+  height: 250px;
   position: relative;
-  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
 }
 
 .contacts {
-  position: absolute;
-  display: inline-block;
-  top: 50%;
-  left: 0;
+  color: #848789;
+  padding-left: 15.6vw;
+  margin: auto 0;
+  line-height: 1.29;
 }
+.contacts__company {
+  font-size: 16px;
+  font-weight: 700;
+}
+.contacts__addres {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contacts__email {
+  display: inline-block;
+  color: #848789;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .links {
-  position: absolute;
-  display: inline-block;
-  position: center;
-  top: 50%;
-  left: 50%;
+  text-align: center;
+  margin: auto 0;
 }
+.links__link {
+  padding-right: 15px;
+}
+
 .copy {
+  text-align: right;
+  padding-right: 15.6vw;
+  margin: auto 0;
+}
+.copy__text {
   display: inline-block;
-  top: 50%;
-  position: absolute;
-  right: 0;
+  padding: 9px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+}
+.copy__img {
+  display: inline-block;
 }

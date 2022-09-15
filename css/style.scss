@@ -382,59 +382,67 @@ main {
 
 //------------------Footer-------------------
 .footer {
-	height: 250px;
 	background-color: #f7f7f7;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 auto;
+	height: 250px;
+	position: relative;
+	display: grid;
+	grid-template: 1fr / repeat(3, 1fr);
 }
 .contacts {
-	position: absolute;
-	display: inline-block;
+	//position: absolute;
+	//display: inline-block;
 
-	margin-left: calc((250-1600) * 100%);
 	color: #848789;
-
+	padding-left: 15.6vw;
+	margin: auto 0;
+	line-height: 1.29;
 	&__company {
 		font-size: 16px;
-		line-height: 17px;
+
 		font-weight: 700;
 	}
 
 	&__addres {
+		display: inline-block;
 		font-size: 14px;
 		font-weight: 400;
 	}
 
 	&__email {
+		display: inline-block;
+		color: #848789;
+		font-style: italic;
+		font-size: 14px;
+		font-weight: 400;
 	}
 }
 .links {
-	position: absolute;
-	display: inline-block;
-	justify-content: center;
-	top: 50%;
-	left: 50% &__link {
+	text-align: center;
+	margin: auto 0;
+	//position: absolute;
+	//display: inline-block;
+	//justify-content: center;
 
-	}
-
-	&__twitter-img {
-	}
-
-	&__facebook-img {
-	}
-
-	&__pinteresta-img {
+	&__link {
+		padding-right: 15px;
 	}
 }
 .copy {
-	display: inline-block;
-
-	//padding-right: 15.6%;
+	//display: inline-block;
+	text-align: right;
+	padding-right: 15.6vw;
+	margin: auto 0;
 	&__text {
+		display: inline-block;
+		padding: 9px;
+		font-size: 14px;
+		line-height: 17px;
+		font-weight: 400;
+		font-style: italic;
+		color: #848789;
 	}
 
 	&__img {
+		display: inline-block;
 	}
 }
