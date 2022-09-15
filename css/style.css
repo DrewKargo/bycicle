@@ -116,19 +116,16 @@ body {
   display: flex;
   width: 100%;
   max-height: 470px;
+  background-color: #f7f7f7;
   flex-direction: column;
-  margin: 80px 0;
+  padding: 85px 0;
   overflow: hidden;
 }
 .about__icon {
-  margin: 35px auto;
+  margin: 30px auto;
   justify-content: center;
 }
-.about__text {
-  flex: 1 1 67.5%;
-}
-
-.text__title {
+.about__title {
   font-size: 18px;
   font-weight: bold;
   line-height: normal;
@@ -136,85 +133,187 @@ body {
   letter-spacing: 3.6px;
   text-align: center;
   color: #353738;
+  padding-bottom: 35px;
 }
-.text__subtitle {
+.about__text {
+  padding: 0 16.25% 55px;
   font-size: 18px;
   line-height: 1.89;
   letter-spacing: normal;
   text-align: center;
   color: #848789;
-  padding: 26px 68px 40px;
-}
-.text__subtitle::after {
-  content: "";
-  position: relative;
-  left: 50%;
-  margin: 40px 0 0 -25px;
-  width: 50px;
-  height: 1px;
-  background-color: #353738;
-  display: block;
 }
 
-.bicycle-01__container {
+/* Подчёркивание-------------::after {
+	content: "";
+	position: relative;
+	left: 50%;
+	margin: 40px 0 0 -25px;
+	width: 50px;
+	height: 1px;
+	background-color: #353738;
+	display: block;
+}*/
+.product {
   width: 100%;
   display: flex;
   position: relative;
 }
-.bicycle-01__image {
-  flex: 1 1 auto;
-}
-.bicycle-01__image::before {
-  content: "";
+.product__main-image {
   position: relative;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(170, 22, 22);
-  display: block;
-  transform: rotate(45deg) translateY(15px);
-  z-index: 2;
+  flex: 1 1 66.666%;
+  position: relative;
+  flex-direction: column;
 }
-.bicycle-01__img--big {
+.product__main-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(/img/oliva_watermark.webp) center no-repeat;
+}
+.product__main-image-3 {
+  position: relative;
+  flex: 1 1 33.333%;
+  position: relative;
+  flex-direction: column;
+}
+.product__main-image-3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(/img/retro_watermark.webp) center no-repeat;
+}
+.product__img--big {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.bicycle-01__description {
-  flex: 1 1 33.333%;
-  position: relative;
-  flex-direction: column;
-}
-.bicycle-01__icon {
-  text-align: center;
-}
-.bicycle-01__img {
+.product__img--middle {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product__about {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 33.333%;
   position: relative;
+  overflow: hidden;
+}
+.product__description {
+  flex: 1 0 auto;
+  position: relative;
+  padding: 40px;
+}
+.product__description::after {
+  content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+  border-bottom: none;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.product__description .product__icon {
+  text-align: center;
+  padding: 30px;
+}
+.product__text {
+  text-align: center;
+}
+.product__title {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #353738;
+}
+.product__subtitle {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #848789;
+}
+.product__subtitle::after {
+  content: "";
+  position: relative;
+  left: 50%;
+  margin: 40px 0 20px -25px;
+  width: 50px;
+  height: 1px;
+  background-color: rgba(53, 55, 56, 0.2);
+  display: block;
+}
+.product__image {
+  flex: 0 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.main-image {
-  flex: 1 1 66.666%;
+.tweets {
+  background-color: #f7f7f7;
+  padding: 65px;
+}
+.tweets__tweet {
+  text-align: center;
+  padding: 2% 13.5% 0;
+}
+.tweets__icon {
+  text-align: center;
+  padding: 36px 0 18px;
+}
+.tweets__autor {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #353738;
+}
+.tweets__time {
+  font-weight: 300;
+  color: #848789;
+}
+.tweets__text {
+  width: 100%;
+  min-height: 135px;
+  text-align: center;
+  padding: 0 2.8%;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
 }
 
 .gallery {
-  display: grid;
-  grid-template: 1fr 1fr 200px/repeat(6, 1fr);
-  grid-template-areas: "img1 img2 img4 img5 img6 img6" "img3 img3 img4 img5 img7 img8" "shop shop shop shop shop shop";
-}
-.gallery__item {
   position: relative;
-}
-.gallery__item:hover {
-  background-color: rgb(100, 194, 158);
+  display: grid;
+  grid-template: 1fr 1fr/repeat(6, 1fr);
+  grid-template-areas: "img1 img2 img4 img5 img6 img6" "img3 img3 img4 img5 img7 img8";
 }
 .gallery__image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.gallery__image ::after {
+  content: "";
+  display: contents;
+  position: absolute;
+  width: 100%;
+  right: 200px;
+  height: 100%;
+  background: url(/img/gallery/shop_now.webp) center no-repeat;
 }
 .gallery__item-1 {
   grid-area: img1;
@@ -240,13 +339,16 @@ body {
 .gallery__item-8 {
   grid-area: img8;
 }
-.gallery__item-shop {
-  grid-area: shop;
+
+.to-shop {
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
   text-align: center;
   background-color: #282f35;
-  position: relative;
 }
-.gallery__button {
+.to-shop__button {
   margin: 75px auto;
   width: 300px;
   height: 50px;
@@ -259,4 +361,77 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
+}
+
+.subscribe {
+  background-color: #ffffff;
+  padding: 6.9%;
+  text-align: center;
+}
+.subscribe__icon {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+.subscribe__text {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+  margin-bottom: 35px;
+}
+.subscribe__area {
+  width: 400px;
+  height: 70px;
+  border: 1px solid #d3d7d9;
+  padding: 0 30px 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+}
+.subscribe__btn {
+  width: 125px;
+  height: 70px;
+  background-color: #64c29e;
+  margin: 0 8px 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  color: #ffffff;
+  cursor: pointer;
+}
+.subscribe__btn:hover {
+  background-color: #c7c7c7;
+  color: #64c29e;
+}
+
+.footer {
+  height: 250px;
+  background-color: #f7f7f7;
+  position: relative;
+  margin: 0 auto;
+}
+
+.contacts {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 0;
+}
+.links {
+  position: absolute;
+  display: inline-block;
+  position: center;
+  top: 50%;
+  left: 50%;
+}
+.copy {
+  display: inline-block;
+  top: 50%;
+  position: absolute;
+  right: 0;
 }

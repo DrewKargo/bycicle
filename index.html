@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
 	<header class="greeting">
 		<nav class="greeting__menu">
 			<ul class="greeting__items">
@@ -24,41 +25,108 @@
 		</nav>
 	</header>
 	<main class="main">
-		<div class="about">
+		<section class="about">
 			<div class="about__icon">
 				<img class="chapter-icon" src="/img/icons/chain.png" alt="">
 			</div>
-			<h1 class="about__title text__title">A NEW GENERATION OF VINTAGE BIKE
+			<h1 class="about__title">A NEW GENERATION OF VINTAGE BIKE
 			</h1>
-			<div class="about__text text__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+			<div class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting
 				industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-				printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+				printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+				five
 				centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 			</div>
-		</div>
-		<div class="bicycle-01__container container">
-			<div class="bicycle-01__image main-image">
-				<img class="bicycle-01__img--big" src="/img/oliva_01.webp" alt="">
-			</div>
-			<div class="bicycle-01__description">
-				<div class="bicycle-01__icon">
-					<img class="chapter-icon" src="/img/icons/frame.png" alt="">
+		</section>
+		<section class="products">
+			<article class="product">
+				<div class="product__main-image">
+					<img class="product__img--big" src="/img/oliva_01.webp" alt="">
 				</div>
-				<div class="bicycle-01__text">
-					<div class="bicycle-01__title text__title">vintage Oliva
+				<div class="product__about">
+					<div class="product__description">
+						<div class="product__icon">
+							<img class="icon" src="/img/icons/frame.png" alt="">
+						</div>
+						<div class="product__text">
+							<div class="product__title">vintage Oliva
+							</div>
+							<div class="product__subtitle">Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+								1500s,
+								when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+								It
+								has
+								survived.
+							</div>
+						</div>
 					</div>
-					<div class="bicycle-01__title text__subtitle">Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-						survived.
+					<img class="product__image" src="/img/oliva_02.webp" alt="">
+				</div>
+			</article>
+			<article class="product">
+				<div class="product__about">
+					<div class="product__description">
+						<div class="product__icon">
+							<img class="icon" src="/img/icons/treadale.webp" alt="">
+						</div>
+						<div class="product__text">
+							<div class="product__title">La Boriosa
+							</div>
+							<div class="product__subtitle">Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+								1500s,
+								when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+								It
+								has
+								survived.
+							</div>
+						</div>
 					</div>
+					<img class="product__image" src="/img/boriosa_02.webp" alt="">
 				</div>
-				<div class="bicycle-01__image">
-					<img class="bicycle-01__img" src="/img/oliva_02.webp" alt="">
+				<div class="product__main-image">
+					<img class="product__img--big" src="/img/boriosa_01.webp" alt="">
 				</div>
+			</article>
+			<article class="product">
+				<div class="product__main-image-3">
+					<img class="product__img--middle" src="/img/retro_01.webp" alt="">
+				</div>
+				<div class="product__about">
+					<div class="product__description">
+						<div class="product__icon">
+							<img class="icon" src="/img/icons/fork.png" alt="">
+						</div>
+						<div class="product__text">
+							<div class="product__title">retrò Bike - M. Hulot
+							</div>
+							<div class="product__subtitle">Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+								1500s,
+								when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+								It
+								has
+								survived.
+							</div>
+						</div>
+					</div>
+					<img class="product__image" src="/img/retro_02.webp" alt="">
+				</div>
+				<div class="product__main-image-3">
+					<img class="product__img--middle" src="/img/retro_03.webp" alt="">
+				</div>
+			</article>
+		</section>
+		<section class="tweets">
+			<div class="tweets__tweet">
+				<img class="tweets__icon" src="/img/icons/twitter.webp" alt="">
+				<div class="tweets__autor">AOD New York @aod / <span class="tweets__time">35 min</span> </div>
+				<div class="tweets__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla
+					semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
 			</div>
-		</div>
-		<div class="gallery">
+		</section>
+		<section class="gallery">
 			<div class="gallery__item-1 gallery__item">
 				<img class="gallery__image" src="/img/gallery/gallery_img1.jpg" alt="">
 			</div>
@@ -83,13 +151,42 @@
 			<div class="gallery__item-8 gallery__item">
 				<img class=" gallery__image" src="/img/gallery/gallery_img8.jpg" alt="">
 			</div>
-			<div class="gallery__item-shop gallery__item">
-				<div class="gallery__button">
-					<a class="btnToShop" href="#">DISCOVER THE SHOP</a>
-				</div>
+		</section>
+		<div class="to-shop">
+			<div class="to-shop__button">
+				<a class="btnToShop" href="#">DISCOVER THE SHOP</a>
 			</div>
 		</div>
+		<section class="subscribe">
+			<img class="subscribe__icon" src="/img/logo.png"></img>
+			<form action="post">
+				<p class="subscribe__text">Stay on the saddle!</p>
+				<input class="subscribe__area" type="email" placeholder="enter your email..."><label for="email"></label>
+				<input class="subscribe__btn" type="submit" value="GO" formmethod="post">
+			</form>
+		</section>
+
 	</main>
+	<footer class="footer">
+		<div class="contacts">
+			<p class="contacts__company">AOD New York</p>
+			<address class="contacts__addres">2250 Lexington Avenue York, NY 10035</address>
+			<a class="contacts__email" href="mailto:info@domain.com">-info@domain.com</a>
+		</div>
+		<div class="links">
+			<a class="links__link" href="www.twitter.com"><img class="links__twitter-img" src="/img/icons/twitter_btn.webp"
+					alt=""></a>
+			<a class="links__link" href="www.facebook.com"><img class="links__facebook-img"
+					src="/img/icons/facebook_btn.webp" alt=""></a>
+			<a class="links__link" href="www.pinteresta.com"><img class="links__pinteresta-img"
+					src="/img/icons/pinteresta_btn.webp" alt=""></a>
+		</div>
+		<div class="copy">
+			<p class="copy__text">Handcrafted by</p>
+			<img class="copy__img" src="/img/icons/yebo_logo.png" alt="">
+		</div>
+	</footer>
+
 </body>
 
 </html>
