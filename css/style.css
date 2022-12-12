@@ -160,7 +160,6 @@ body {
   position: relative;
 }
 .product__main-image {
-  position: relative;
   flex: 1 1 66.666%;
   position: relative;
   flex-direction: column;
@@ -258,20 +257,13 @@ body {
      object-fit: contain;
 }
 
-.tweets {
-  background-color: #f7f7f7;
-  padding: 65px;
-}
-.tweets__tweet {
-  text-align: center;
-  padding: 2% 13.5% 0;
-}
 .tweets__icon {
+  margin: 0 auto;
   text-align: center;
   padding: 36px 0 18px;
 }
 .tweets__autor {
-  text-decoration: none;
+  text-align: center;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 700;
@@ -353,6 +345,7 @@ body {
   width: 300px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.49);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .btnToShop {
@@ -363,16 +356,16 @@ body {
   color: #ffffff;
 }
 
-.subscribe {
+.contact {
   background-color: #ffffff;
-  padding: 6.9%;
+  padding: 105px 0 110px;
   text-align: center;
 }
-.subscribe__icon {
+.contact__icon {
   text-align: center;
   margin: 0 auto 40px;
 }
-.subscribe__text {
+.contact__text {
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
@@ -380,7 +373,7 @@ body {
   color: #848789;
   margin-bottom: 35px;
 }
-.subscribe__area {
+.contact__area {
   width: 400px;
   height: 70px;
   border: 1px solid #d3d7d9;
@@ -391,7 +384,7 @@ body {
   font-style: italic;
   color: #929292;
 }
-.subscribe__btn {
+.contact__btn {
   width: 125px;
   height: 70px;
   background-color: #64c29e;
@@ -404,7 +397,7 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
-.subscribe__btn:hover {
+.contact__btn:hover {
   background-color: #c7c7c7;
   color: #64c29e;
 }
@@ -464,4 +457,20 @@ body {
 }
 .copy__img {
   display: inline-block;
+}
+
+@media screen and (max-width: 1023px) {
+  .gallery {
+    grid-template: 1fr 1fr 1fr/repeat(4, 1fr);
+    grid-template-areas: "img1 img2 img4 img5 " "img3 img3 img4 img5 " "img6 img6 img7 img8";
+  }
+  .product {
+    display: block;
+  }
+}
+@media screen and (max-width: 788px) {
+  .gallery {
+    grid-template: repeat(6, 1fr)/repeat(2, 1fr);
+    grid-template-areas: "img1 img2 img4 img5 " "img3 img3 img4 img5 " "img6 img6 img7 img8";
+  }
 }

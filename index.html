@@ -6,26 +6,28 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/slider.css">
 	<title>Bicycle</title>
 </head>
 
 <body>
 
 	<header class="greeting">
-		<nav class="greeting__menu">
+		<nav class="greeting__menu scrollto">
 			<ul class="greeting__items">
-				<li><a class="greeting__item" href="">about us</a></li>
-				<li><a class="greeting__item" href="">work</a></li>
+				<li><a class="greeting__item" href="#about">about us</a></li>
+				<li><a class="greeting__item" href="#work">work</a></li>
 				<li><a class="greeting__item-logo" href="">
 						<img src="/img/logo.png" alt="">
 					</a></li>
-				<li><a class="greeting__item" href="">shop</a></li>
-				<li><a class="greeting__item" href="">contact</a></li>
+				<li><a class="greeting__item" href="#shop">shop</a></li>
+				<li><a class="greeting__item" href="#contact">contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main class="main">
-		<section class="about">
+		<!---------------------- About---------------------->
+		<section class="about" id="about">
 			<div class="about__icon">
 				<img class="chapter-icon" src="/img/icons/chain.png" alt="">
 			</div>
@@ -38,7 +40,8 @@
 				centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 			</div>
 		</section>
-		<section class="products">
+		<!---------------------- Work ---------------------->
+		<section class="work" id="work">
 			<article class="product">
 				<div class="product__main-image">
 					<img class="product__img--big" src="/img/oliva_01.webp" alt="">
@@ -118,15 +121,34 @@
 				</div>
 			</article>
 		</section>
-		<section class="tweets">
-			<div class="tweets__tweet">
-				<img class="tweets__icon" src="/img/icons/twitter.webp" alt="">
-				<div class="tweets__autor">AOD New York @aod / <span class="tweets__time">35 min</span> </div>
-				<div class="tweets__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla
-					semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
+		<!---------------------- Tweets ---------------------->
+		<section class="slider">
+			<img class="tweets__icon" src="/img/icons/twitter.webp" alt="">
+			<div class="slider__box">
+				<div class="slider__line">
+					<div class="slider__item">
+						<div class="tweets__autor">AOD New York @aod / <span class="tweets__time">35 min</span> </div>
+						<div class="tweets__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla
+						semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
+					</div>
+					<div class="slider__item">
+						<div class="tweets__autor">AOD New York @aod / <span class="tweets__time">40 min</span> </div>
+						<div class="tweets__text">Sapiente, facilis soluta, qui fugit rerum nobis quasi, ducimus adipisci earum ullam voluptas cumque. 
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="tweets__autor">AOD New York @aod / <span class="tweets__time">45 min</span> </div>
+						<div class="tweets__text">Dolorem molestiae repellendus sit et dolorum dolores harum voluptatem eaque ex modi! Tempore, sint? Consectetur, vel sequi voluptates magnam distinctio delectus nihil.</div>
+					</div>
 			</div>
+					</div>
+				</div>
+			</div>
+			<ol class="slider__buttons">
+			</ol>
 		</section>
-		<section class="gallery">
+		<!---------------------- Gallery ---------------------->
+		<section class="gallery" id="shop">
 			<div class="gallery__item-1 gallery__item">
 				<img class="gallery__image" src="/img/gallery/gallery_img1.jpg" alt="">
 			</div>
@@ -153,20 +175,21 @@
 			</div>
 		</section>
 		<div class="to-shop">
-			<div class="to-shop__button">
-				<a class="btnToShop" href="#">DISCOVER THE SHOP</a>
-			</div>
+			<button class="to-shop__button">
+				<p class="btnToShop" href="#">DISCOVER THE SHOP</p>
+			</button>
 		</div>
-		<section class="subscribe">
-			<img class="subscribe__icon" src="/img/logo.png"></img>
+		<section class="contact" id="contact">
+			<img class="contact__icon" src="/img/logo.png"></img>
 			<form action="post">
-				<p class="subscribe__text">Stay on the saddle!</p>
-				<input class="subscribe__area" type="email" placeholder="enter your email..."><label for="email"></label>
-				<input class="subscribe__btn" type="submit" value="GO" formmethod="post">
+				<p class="contact__text">Stay on the saddle!</p>
+				<input class="contact__area" type="email" placeholder="enter your email..."><label for="email"></label>
+				<input class="contact__btn" type="submit" value="GO" formmethod="post">
 			</form>
 		</section>
 
 	</main>
+	<!---------------------- Footer ---------------------->
 	<footer class="footer">
 		<div class="contacts">
 			<p class="contacts__company">AOD New York</p>
@@ -185,5 +208,6 @@
 	</footer>
 
 </body>
-
+<script src="/js/slider.js"></script>
+<script src="/js/script.js"></script>
 </html>
