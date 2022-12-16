@@ -6,7 +6,7 @@
 		sliderLine = document.querySelector('.slider__line');
 		
 
-	box.style.width = `${document.documentElement.clientWidth - 50}px`;	
+	
 	sliderLine.style.width = 100 * slides.length + '%';
 	let width = window.getComputedStyle(box).width;
 

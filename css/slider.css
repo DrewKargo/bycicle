@@ -99,13 +99,14 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 250px;
+  padding: 50px 25px;
   background-color: #eee;
 }
 .slider__box {
   position: relative;
   min-height: 200px;
   overflow: hidden;
+  width: 100vw;
 }
 .slider__line {
   position: absolute;

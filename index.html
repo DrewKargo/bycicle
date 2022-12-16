@@ -11,17 +11,34 @@
 </head>
 
 <body>
-
-	<header class="greeting">
-		<nav class="greeting__menu scrollto">
-			<ul class="greeting__items">
-				<li><a class="greeting__item" href="#about">about us</a></li>
-				<li><a class="greeting__item" href="#work">work</a></li>
-				<li><a class="greeting__item-logo" href="">
+	<section class="mobile">
+		<div class="mobile__top">
+			<a class="menu__item-logo" href="#up">
+				<img src="/img/logo.png" alt="logo">
+			</a>
+			<div class="mobile-btn">
+				<span></span>
+			</div>
+		</div>
+		<div class="mobile__modal hide-modal">
+			<ul class="menu__items">
+				<li><a class="menu__item" href="#about">about us</a></li>
+				<li><a class="menu__item" href="#work">work</a></li>
+				<li><a class="menu__item" href="#shop">shop</a></li>
+				<li><a class="menu__item" href="#contact">contact</a></li>
+			</ul>
+		</div>
+	</section>
+	<header class="header" id="up">
+		<nav class="menu scrollto">
+			<ul class="menu__items">
+				<li><a class="menu__item" href="#about">about us</a></li>
+				<li><a class="menu__item" href="#work">work</a></li>
+				<li><a class="menu__item-logo" href="#">
 						<img src="/img/logo.png" alt="">
 					</a></li>
-				<li><a class="greeting__item" href="#shop">shop</a></li>
-				<li><a class="greeting__item" href="#contact">contact</a></li>
+				<li><a class="menu__item" href="#shop">shop</a></li>
+				<li><a class="menu__item" href="#contact">contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -181,7 +198,7 @@
 		</div>
 		<section class="contact" id="contact">
 			<img class="contact__icon" src="/img/logo.png"></img>
-			<form action="post">
+			<form class="contact__form" action="post">
 				<p class="contact__text">Stay on the saddle!</p>
 				<input class="contact__area" type="email" placeholder="enter your email..."><label for="email"></label>
 				<input class="contact__btn" type="submit" value="GO" formmethod="post">
