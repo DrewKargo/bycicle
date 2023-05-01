@@ -51,20 +51,19 @@
 
 	}
 
-
-
-
-
 	showEnableBTN();
+
 	function moveRight() {
 		if (offset == convWidth * (slides.length - 1)) {
 			offset = 0;
+			btnPoz = 0;
 		} else {
 			offset += convWidth;
+			btnPoz++;
 		}
 		sliderLine.style.transform = `translateX(-${offset}px)`;
-		btnPoz++;
 	}
+
 	function moveLeft() {
 		if (offset == 0) {
 			offset = convWidth * (slides.length - 1);
