@@ -82,7 +82,7 @@ body {
 }
 
 .header {
-  background-image: url(/img/header_bg.webp);
+  background-image: url(../img/header_bg.webp);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(/img/oliva_watermark.webp) center no-repeat;
+  background: url(../img/oliva_watermark.webp) center no-repeat;
 }
 .product__main-image-3 {
   position: relative;
@@ -181,7 +181,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(/img/retro_watermark.webp) center no-repeat;
+  background: url(../img/retro_watermark.webp) center no-repeat;
 }
 .product__img--big {
   width: 100%;
@@ -304,7 +304,7 @@ body {
   width: 100%;
   right: 200px;
   height: 100%;
-  background: url(/img/gallery/shop_now.webp) center no-repeat;
+  background: url(../img/gallery/shop_now.webp) center no-repeat;
 }
 .gallery__item-1 {
   grid-area: img1;
@@ -530,8 +530,8 @@ body {
     position: relative;
   }
   .mobile-btn span,
-.mobile-btn span::before,
-.mobile-btn span::after {
+  .mobile-btn span::before,
+  .mobile-btn span::after {
     position: absolute;
     width: 50px;
     height: 2px;
