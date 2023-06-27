@@ -105,12 +105,16 @@ main {
 		flex: 1 1 66.666%;
 		position: relative;
 		flex-direction: column;
+		overflow: hidden;
 		&::before {
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 100%;
 			background: url(../img/oliva_watermark.webp) center no-repeat;
+			&:hover {
+				transform: scale(105%);
+			}
 		}
 	}
 	&__main-image-3 {
@@ -249,6 +253,8 @@ main {
 		"img3 img3 img4 img5 img7 img8";
 
 	&__item {
+		position: relative;
+		overflow: hidden;
 	}
 
 	&__image {
@@ -263,6 +269,10 @@ main {
 			right: 200px;
 			height: 100%;
 			background: url(../img/gallery/shop_now.webp) center no-repeat;
+		}
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.5s ease-in-out;
 		}
 	}
 
@@ -454,9 +464,6 @@ main {
 	}
 }
 @media screen and (max-width: 768px) {
-	body {
-		padding-top: 135px;
-	}
 	.menu {
 		display: none;
 	}
@@ -469,7 +476,7 @@ main {
 		flex-direction: column;
 		justify-content: space-between;
 		width: 100%;
-		height: 135px;
+		height: 75px;
 		transition: 1s;
 
 		&__top {
@@ -504,22 +511,20 @@ main {
 			padding: 20px;
 		}
 	}
-	// .menu__item {
-	// 	padding-top: 20px;
-	// }
 	.menu__item-logo img {
-		padding: 25px;
+		width: 64px;
+		padding: 10px;
 	}
 	.mobile-btn {
-		margin: 42.5px;
-		width: 50px;
-		height: 50px;
+		margin: 20px 10px;
+		width: 24px;
+		height: 24px;
 		position: relative;
 		span,
 		span::before,
 		span::after {
 			position: absolute;
-			width: 50px;
+			width: 26px;
 			height: 2px;
 			background-color: #848789;
 			top: 50%;
@@ -527,11 +532,11 @@ main {
 		}
 		& span::before {
 			content: "";
-			transform: translateY(-23px);
+			transform: translateY(-12px);
 		}
 		& span::after {
 			content: "";
-			transform: translateY(23px);
+			transform: translateY(12px);
 		}
 	}
 	.gallery {
