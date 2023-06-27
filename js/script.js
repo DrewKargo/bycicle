@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-	//-----------Плавная прокрутка-----------\\
 	document.querySelectorAll('a[href^="#"').forEach(link => {
 
 		link.addEventListener('click', function(e) {
@@ -23,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   
-  	//-----------Мобильное меню-----------\\
+
 	 const mobileBtn = document.querySelector('.mobile-btn');
 	 const modal =  document.querySelector('.mobile__modal');
 
@@ -51,11 +50,10 @@ window.addEventListener('DOMContentLoaded', () => {
 			header.classList.add('hide');
 			modal.classList.remove('show-modal');
 			modal.classList.add('hide-modal');
-			console.log('down');
 		}
 		else if (scrollPosition() < lastScroll && containHide() && scrollPosition() > defaultOffset){
 			header.classList.remove('hide');
-			console.log('up');
+			
 		}
 		lastScroll = scrollPosition();
 	})		
